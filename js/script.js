@@ -63,6 +63,6 @@ function getExchangeRate(){
         let totalExRate = (amountVal * exchangeRate).toFixed(2); // Se multiplica el monto del valor por la divisa 
         exchangeRateTxt.innerText = `${amountVal} ${fromCurrency.value} = ${totalExRate} ${toCurrency.value}`;
     }).catch(() =>{ // Si el usuario no esta en linea u ocurre algun error 
-        exchangeRateTxt.innerText = "Something went wrong";
+        exchangeRateTxt.innerText = "Ha ocurrido un error";
     });
 }
